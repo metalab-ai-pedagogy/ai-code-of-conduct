@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html{
-    /* color: #595959; */
     font-family: 'Inter', sans-serif;
     line-height: 1.8;
+    scroll-behavior: smooth;
 }
 
 a{
