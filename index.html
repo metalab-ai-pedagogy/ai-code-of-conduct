@@ -6,24 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Code of Conduct | metaLAB (at) Harvard</title>
     <meta name="title" content="AI Code of Conduct">
-    <!-- <meta name="description" content="A curated collection of assignments bringing a critical lens to Artificial Intelligence (AI), built collaboratively with educators. We give teachers the tools to examine AI’s dangers, benefits, and inevitable impact in the classroom."> -->
     <meta name="robots" content="index, archive">
     <meta name="googlebot" content="index, archive">
 
     <!-- OpenGraph meta data -->
     <meta property="og:site_name" content="AI Code of Conduct">
-    <meta property="og:url" content="https://aipedagogy.org">
+    <meta property="og:url" content="https://aicodeofconduct.mlml.io">
     <meta property="og:title" content="Home">
-    <!-- <meta property="og:description" content="A curated collection of assignments bringing a critical lens to Artificial Intelligence (AI), built collaboratively with educators. We give teachers the tools to examine AI’s dangers, benefits, and inevitable impact in the classroom."> -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://aipedagogy.org/assets/images/ai-pedagogy-banner.png">
 
     <!-- Twitter meta data -->
     <meta property="twitter:card" content="summary">
     <meta property="twitter:title" content="Home">
-    <!-- <meta property="twitter:description" content="A curated collection of assignments bringing a critical lens to Artificial Intelligence (AI), built collaboratively with educators. We give teachers the tools to examine AI’s dangers, benefits, and inevitable impact in the classroom."> -->
-    <meta property="twitter:image" content="https://aipedagogy.org/assets/images/ai-pedagogy-banner.png">
 
     <!-- Styles -->
     <link href="assets/styles/output.css" rel="stylesheet">
@@ -57,24 +52,24 @@
                 </a>
                 <nav id="toc">
                     <ol>
-                        <li><a class="nav-link" href="#authors">Authors</a>
+                        <li><a class="nav-link transition-colors duration-200" href="#authors">Authors</a>
                             <ol>
-                                <li><a class="nav-link" href="#contributions-from-students">Contributions from Creativity (Gen Ed 1067) Students</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#contributions-from-students">Contributions from Creativity (Gen Ed 1067) Students</a></li>
                             </ol>
                         </li>
-                        <li><a class="nav-link" href="#summary">Summary</a></li>
-                        <li><a class="nav-link" href="#proposed-code-of-conduct">Proposed AI Code of Conduct</a>
+                        <li><a class="nav-link transition-colors duration-200" href="#summary">Summary</a></li>
+                        <li><a class="nav-link transition-colors duration-200" href="#proposed-code-of-conduct">Proposed AI Code of Conduct</a>
                             <ol>
-                                <li><a class="nav-link" href="#coc-overview">Overview</a></li>
-                                <li><a class="nav-link" href="#coc-motivation">Motivation</a></li>
-                                <li><a class="nav-link" href="#coc-key-points">Key Points</a></li>
-                                <li><a class="nav-link" href="#coc-suggestions-implementation-framing-resources">Suggestions: Implementation, Framing, and Resources</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#coc-overview">Overview</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#coc-motivation">Motivation</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#coc-key-points">Key Points</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#coc-suggestions-implementation-framing-resources">Suggestions: Implementation, Framing, and Resources</a></li>
                             </ol>
                         </li>
-                        <li><a class="nav-link" href="#canvas-templates">Canvas Templates</a>
+                        <li><a class="nav-link transition-colors duration-200" href="#canvas-templates">Canvas Templates</a>
                             <ol>
-                                <li><a class="nav-link" href="#canvas-acknowledgement-and-citation">Acknowledgement and citation of generative AI tool use</a></li>
-                                <li><a class="nav-link" href="#canvas-course-assignment-policies">Course- or assignment-specific policies</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#canvas-acknowledgement-and-citation">Acknowledgement and citation of generative AI tool use</a></li>
+                                <li><a class="nav-link transition-colors duration-200" href="#canvas-course-assignment-policies">Course- or assignment-specific policies</a></li>
                             </ol>
                         </li>
                     </ol>
@@ -188,6 +183,7 @@
     </main>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script>
+        // Auto resize sidebar 
         var new_width = $('#sidebar-container').width();
         $('#sidebar').width(new_width); 
         window.onresize = function() {
@@ -195,31 +191,23 @@
             $('#sidebar').width(new_width); 
         }
 
+        // Sidebar scrollspy 
         $(document).ready(function(){
-
             var sectionIds = $('a.nav-link');
-
             $(document).scroll(function(){
                 sectionIds.each(function(){
-
                     var container = $(this).attr('href');
                     var containerOffset = $(container).offset().top;
                     var containerHeight = $(container).outerHeight();
                     var containerBottom = containerOffset + containerHeight;
                     var scrollPosition = $(document).scrollTop();
-            
                     if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
                         $(this).addClass('active');
                     } else{
                         $(this).removeClass('active');
                     }
-            
-            
                 });
             });
-            
-
-
-            });
+        });
     </script>
 </body>
