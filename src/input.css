@@ -71,6 +71,12 @@ ul.list-dash li p {
     font-weight: bold;
     font-size: 0.95rem;
     padding-bottom: 0.25rem;
+    color: #515151;
+}
+
+#toc ol li a.nav-link:hover{
+    color: #000;
+    border-color: #b8b8b8;
 }
 
 #toc ol li ol li a.nav-link{
@@ -80,6 +86,6 @@ ul.list-dash li p {
 }
 
 #toc a.active{
-    color: #dc2f02;
+    color: #dc2f02 !important;
     border-color: #dc2f02 !important;
 }
