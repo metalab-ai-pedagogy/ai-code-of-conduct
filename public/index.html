@@ -16,10 +16,6 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
 
-    <!-- Twitter meta data -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:title" content="Home">
-
     <!-- Styles -->
     <link href="assets/styles/output.css" rel="stylesheet">
     
@@ -27,6 +23,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Redirect GitHub Pages -->
+    <script type="text/javascript">
+        if(window.location.href.includes("github.io")){
+            window.location.replace("https://aicodeofconduct.mlml.io");
+        }
+    </script>
 </head>
 <body>
     <a class="lg:hidden flex fixed z-10 bottom-10 right-10 items-center justify-center bg-red-ml text-white rounded-full h-14 w-14 font-bold" href="assets/files/ai_code_of_conduct.pdf" target="_blank">
