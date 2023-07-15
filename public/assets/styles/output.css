@@ -681,6 +681,10 @@ video {
   max-width: 100%;
 }
 
+.resize {
+  resize: both;
+}
+
 .list-decimal {
   list-style-type: decimal;
 }
