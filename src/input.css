@@ -68,7 +68,7 @@ ul.list-dash li p {
 #toc ol li a.nav-link{
     border-left: 4px solid #eee;
     padding-left: 0.75rem;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 0.95rem;
     padding-bottom: 0.25rem;
     color: #515151;
